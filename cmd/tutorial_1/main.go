@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-   var inputVar string = "Bien truyen vao"
+//    var inputVar string = "Bien truyen vao"
    var intArr [3]int = [3]int{0,1,2}
    intArr[2] = 111
    fmt.Println(intArr[1])
@@ -23,9 +23,22 @@ func main() {
       fmt.Printf("Name %v", name)
    }
    for  i,v := range myMap2 {
-         fmt.Printf("Index: %v, Value: %v", i, v)
+         fmt.Printf("Index: %v, Value: %v\n", i, v)
       }
-   run(inputVar)
+    var string1 = "Phương Duyên"
+    var indexed = string1[0]
+    fmt.Println(indexed)
+
+     var strSlice = []string{"D", "i", "n", "l", "o"}
+     var catStr = ""
+     for i := range strSlice {
+         fmt.Printf("Index: %v\n", i)
+           catStr += strSlice[i]
+     }
+     fmt.Printf(catStr)
+
+
+//    run(inputVar)
 }
 
 func run(inputVar string) {
